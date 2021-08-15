@@ -22,7 +22,7 @@ const Home = () => {
       </div>
       <div className={styles.cake}>
       <Zoom right>
-      <img src={cake}   alt="" />
+      <img src={cake}  alt="cake" />
       </Zoom>
        
       </div>

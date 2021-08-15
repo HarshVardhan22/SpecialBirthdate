@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Be Vietnam";
+  
 }
 .formContainer{
     min-width: 30vw;
@@ -41,5 +42,39 @@ button{
   }
   .textColor {
     color: red;
+    font-size:48px;
   }
+  .result h1{
+        font-size: 48px;
+  }
+  .result h2{
+      margin-top: -20px;
+    font-size: 28px;
+}
 
+
+
+  .rightContainer{
+    margin-bottom: 50px;
+  }
+@media only screen and (max-width:700px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .rightContainer{
+        margin-left: 25px;
+        margin-bottom: 0px;
+    }
+    .textColor {
+        color: red;
+        font-size:32px;
+      }
+      .result h1{
+            font-size:32px;
+      }
+      .result h2{
+          margin-top: 0px;
+        font-size: 24px;
+    }
+    
+}

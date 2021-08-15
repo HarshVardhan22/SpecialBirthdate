@@ -54,7 +54,7 @@ const Main = () => {
           <form onSubmit={checkDate}>
             <h2>Enter Your Date Of Birth</h2>
             <input type="Date" value={value} onChange={handleDate} required />
-            <button onClick={checkDate} disabled={value === "" ? true : false}>
+            <button onClick={checkDate} disabled={value === "" ? true : false} style={{opacity:`${value===""?"0.5":"1"}`}}>
               Check
             </button>
             <p>20-02-2002 is an example of</p>
@@ -65,7 +65,7 @@ const Main = () => {
       <div className={styles.rightContainer}>
         {flag === true && (
           <Bounce right>
-            <div className={styles.success}>
+            <div className={styles.result}>
               <h1>Congratulions!!</h1>
               <h2>
                 Your BirthDate is a{" "}
@@ -77,7 +77,7 @@ const Main = () => {
         )}
         {flag === false && (
           <Bounce right>
-            <div className={styles.fail}>
+            <div className={styles.result}>
               <h1>Sorry!! </h1>
               <h2>
                 Your BirthDate is{" "}
