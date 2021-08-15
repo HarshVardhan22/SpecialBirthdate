@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  height: 100vh; 
+  font-family: "Be Vietnam";
+  flex-direction: column;  
+  scroll-snap-align: start;
+  margin-left: 25px;
+  justify-content: center;
+}
+
+.container h1 {
+  font-size: 64px;
+  margin-top: 0px;
+}
+
+.container h4 {
+  font-size: 28px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > button {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  color: aliceblue;
+  padding: 5px;
+  font-size: medium;
+  font-family: "Be Vietnam";
+  font-weight: bold;
+  border-radius: 7px;
+  border:none;
+}
+
+
+
+.container>button:hover{
+  background-color: rgb(255, 255, 255);
+  color: red;
+  border: 1px solid red;
+  transition: all 0.2s linear;
+}
+.textColor {
+  color: red;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media  only screen and (max-width:700px){
+  .cake{
+    display: none;
+  }
+}

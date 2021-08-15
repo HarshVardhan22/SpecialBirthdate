@@ -1,0 +1,45 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Be Vietnam";
+}
+.formContainer{
+    min-width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+button{ 
+    padding: 7px;
+    background-color: red;
+    color: aliceblue;
+    font-size: medium;
+    font-family: "Be Vietnam";
+    font-weight: bold;
+    border-radius: 7px;
+    border:none;
+    margin-top: 5px;
+}
+
+.container button:active{
+    background-color: rgb(255, 255, 255);
+    color: red;
+    border: 1px solid red;
+    transition: all 0.2s linear;
+  }
+  .textColor {
+    color: red;
+  }
+
