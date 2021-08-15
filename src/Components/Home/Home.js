@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import Jump from "react-reveal/Jump";
 import Zoom from 'react-reveal/Zoom';
+import {Link} from 'react-scroll'
 import cake from "../../Assets/cake.png"
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
         <Jump>
           <h1 className={styles.textColor}>Palindrome?</h1>
         </Jump>
-        <button>Check Out</button>
+        <button><a href ="#main">Check Out</a></button>
         <h4>
           A palindrome is a word/number which <br></br>reads the same backward
           as forward

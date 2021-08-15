@@ -53,10 +53,17 @@
   border:none;
 }
 
-
+a:visited{
+ text-decoration: none;
+ color: aliceblue;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
 
 .container>button:hover{
-  background-color: rgb(255, 255, 255);
+  background-color: #1f1f1f;
   color: red;
   border: 1px solid red;
   transition: all 0.2s linear;

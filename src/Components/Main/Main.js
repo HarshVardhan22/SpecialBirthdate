@@ -48,7 +48,7 @@ const Main = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div id="main" className={styles.container}>
       <div className={styles.formContainer}>
         <Bounce left>
           <form onSubmit={checkDate}>
