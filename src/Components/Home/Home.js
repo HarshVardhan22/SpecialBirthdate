@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import Jump from "react-reveal/Jump";
 import Zoom from 'react-reveal/Zoom';
-import {Link} from 'react-scroll'
+
 import cake from "../../Assets/cake.png"
 const Home = () => {
   return (
