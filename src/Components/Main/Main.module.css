@@ -72,6 +72,7 @@ button{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     .rightContainer{
       margin-bottom: 20px;
@@ -81,7 +82,7 @@ button{
         font-size:32px;
       }
       .result h1{
-            font-size:32px;
+            font-size:28px;
       }
       .result h2{
           margin-top: 0px;

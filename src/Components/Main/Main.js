@@ -8,7 +8,7 @@ const Main = () => {
   const [nextPDate, setNextPDate] = useState("");
   const [formatStr, setFormatStr] = useState("");
   const [daysMissed,setDaysMissed] = useState(0);
-  
+
   const handleDate = (e) => {
     setValue(e.target.value);
   };
@@ -64,6 +64,8 @@ const Main = () => {
   const checkDate = (e) => {
   
     e.preventDefault();
+
+
     let date = value.replaceAll("-", "");
 
     let year = date.substring(0, 4);
@@ -141,10 +143,13 @@ const Main = () => {
           <Bounce right>
             <div className={styles.result}>
               <h1>Sorry!! </h1>
+              <div>
               <h2>
                 Your BirthDate is{" "}
                 <span className={styles.textColor}>not a Palindrome</span>
               </h2>
+              </div>
+              
               <h3>Upcoming Palindrome :  <span className={styles.textColorSmall}>{nextPDate}</span></h3>
       <h3>In Format : {formatStr}</h3>
       <h3>You missed it by :  <span className={styles.textColorSmall}>{daysMissed} </span>Days</h3>  
