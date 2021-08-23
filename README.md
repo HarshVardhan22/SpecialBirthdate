@@ -1,4 +1,7 @@
 #checkout this app: https://palindromic-birth.netlify.app/
+An application that check whether the given date is a palindrome or not
+It also tells by how many days the nearest palindrome is missed
+I have used React.js to make this application 
 
 # Getting Started with Create React App
 
