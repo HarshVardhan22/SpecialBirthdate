@@ -8,7 +8,8 @@ const Main = () => {
   const [nextPDate, setNextPDate] = useState("");
   const [formatStr, setFormatStr] = useState("");
   const [daysMissed,setDaysMissed] = useState(0);
-
+  const [gif,setGif] = useState("")
+  //<iframe src="https://giphy.com/embed/l4hLU9R1Zjypsd6b6" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/iphone-loading-laptop-l4hLU9R1Zjypsd6b6">via GIPHY</a></p>
   const handleDate = (e) => {
     setValue(e.target.value);
   };
@@ -61,10 +62,21 @@ const Main = () => {
     }
   };
 
+  const handleClick = e => {
+    e.preventDefault();
+    setFlag();
+    setGif("https://media.giphy.com/media/VseXvvxwowwCc/giphy.gif?cid=ecf05e47ljo1kgyxk7zgg68mhr81oik9zlv67uuum6d2uz4o&rid=giphy.gif&ct=g");
+    let timer = setTimeout(()=>{
+      setGif("");
+      checkDate(e)
+    },3000)
+  }
+
   const checkDate = (e) => {
+    
   
     e.preventDefault();
-
+  
 
     let date = value.replaceAll("-", "");
 
@@ -111,11 +123,11 @@ const Main = () => {
     <div id="main" className={styles.container}>
       <div className={styles.formContainer}>
         <Bounce left>
-          <form onSubmit={checkDate}>
+          <form onSubmit={handleClick}>
             <h2>Enter Your Date Of Birth</h2>
             <input type="Date" value={value} onChange={handleDate} required />
             <button
-              onClick={checkDate}
+              onClick={handleClick}
               disabled={value === "" ? true : false}
               style={{ opacity: `${value === "" ? "0.5" : "1"}` }}
             >
@@ -139,6 +151,9 @@ const Main = () => {
             </div>
           </Bounce>
         )}
+        {
+          gif!=="" && <img src={gif} alt="gifLoading" width="200px" height="200px" />
+        }
         {flag === false && (
           <Bounce right>
             <div className={styles.result}>
